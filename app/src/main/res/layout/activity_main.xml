@@ -14,18 +14,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <ImageView
             android:layout_width="160dp"
             android:layout_height="160dp"
+            android:contentDescription="@string/profile_logo"
             android:src="@drawable/icon_account_circle" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:hint="Username"
+            android:autofillHints=""
+            android:hint="@string/username"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="20sp"
@@ -38,7 +41,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:hint="Password"
+            android:autofillHints=""
+            android:hint="@string/password"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="20sp"
@@ -50,9 +54,9 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="@string/login"
             android:backgroundTint="@color/white"
-            android:textColor="#3884F1"
+            android:textColor="#540BD5"
             android:padding="18dp"
             android:layout_marginTop="20sp"
             android:id="@+id/login_btn"/>
@@ -60,7 +64,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Social Login"
+            android:text="@string/social_login"
             android:textColor="@color/white"
             android:layout_marginTop="32dp"/>
 
@@ -76,6 +80,7 @@
                 android:layout_height="64dp"
                 android:layout_margin="16dp"
                 android:src="@drawable/facebook"
+                android:contentDescription="@string/facebook_image"
                 android:id="@+id/facebook_btn"/>
 
             <ImageView
@@ -83,6 +88,7 @@
                 android:layout_height="64dp"
                 android:layout_margin="16dp"
                 android:src="@drawable/linkedin"
+                android:contentDescription="@string/linkedin_image"
                 android:id="@+id/linkedin_btn"/>
 
             <ImageView
@@ -90,6 +96,7 @@
                 android:layout_height="64dp"
                 android:layout_margin="16dp"
                 android:src="@drawable/search"
+                android:contentDescription="@string/google_image"
                 android:id="@+id/google_btn"/>
 
         </LinearLayout>

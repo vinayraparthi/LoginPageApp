@@ -2,4 +2,10 @@
     <string name="app_name">My Application</string>
     <string name="username">UserName</string>
     <string name="password">Password</string>
+    <string name="social_login">Social Login</string>
+    <string name="login">Login</string>
+    <string name="facebook_image">facebook_image</string>
+    <string name="linkedin_image">linkedin_image</string>
+    <string name="google_image">google_image</string>
+    <string name="profile_logo">profile_logo</string>
 </resources>
